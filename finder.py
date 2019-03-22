@@ -26,7 +26,7 @@ sug_lat=[]
 sug_lon=[]
 for i in range(len(lat_list)):
 	dist=distance(cur_lat,cur_lon,radians(float(lat_list[i])),radians(float(lon_list[i])))
-	if dist <= 2:
+	if dist <= 15:
 		sug_lat.append(lat_list[i])
 		sug_lon.append(lon_list[i])
 
@@ -37,7 +37,7 @@ Name=a['Hospital_Name'].to_string(index=False)
 Address=a['Address_Original_First_Line'].to_string(index=False)
 Name=Name.split('\n')
 Address=Address.split('\n')
-for i in range(len(Name)):
-	print(Name[i].lstrip())
-	print(Address[i].lstrip())
-	print('\n')
+#for i in range(len(Name)):
+#	print(Name[i].lstrip())
+#	print(Address[i].lstrip())
+#	print('\n')

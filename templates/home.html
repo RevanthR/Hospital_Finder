@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital Finder</title>
+	<link href="{{url_for('static',filename='css/style.css?version=51') }}" rel="stylesheet">
+</head>
+<body>
+
+<h1 class='head'> Appliction to find Hospital </h1>
+
+ <table id="name">
+ 	<th> Hospital Name </th>
+	{% for val in list1 %}
+	<tr><td>{{val}}</td><tr>
+	{% endfor %}
+</table>
+
+<table id="addr">
+	<th>Hospital Address</th>
+	{% for val2 in list2 %}
+	<tr><td>{{val2}}</td></tr>
+	{% endfor %}
+</table>
+
+</body>
+</html>
